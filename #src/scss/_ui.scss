@@ -1,0 +1,13 @@
+.title {
+    @media (max-width: $md3+px) {
+        font-size: 18px;
+
+    }
+}
+
+.text {
+    @media (max-width: $md3+px) {
+        font-size: 16px;
+        line-height: math.div(25, 16) *100%;
+    }
+}

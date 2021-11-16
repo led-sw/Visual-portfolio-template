@@ -1,0 +1,38 @@
+.header {
+
+    &__container {
+        max-width: 1280px;
+        margin: 24px auto 0px auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 32px;
+        @media (max-width: $md1+px) {
+            padding: 0 10px;
+        }
+    }
+
+    &__logo {
+        font-size: 18px;
+    }
+
+    &__menu {
+        display: flex;
+    }
+}
+.menu {
+
+    &__switch {
+        padding: 0px 28px 0px 0px;
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        * {
+            margin: 15px auto;
+        }
+    }
+}
