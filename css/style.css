@@ -133,7 +133,7 @@ h6 {
 }
 
 .header__logo {
-  font-size: 18px;
+  font-size: 32px;
 }
 
 .header__menu {
@@ -143,7 +143,11 @@ h6 {
 }
 
 .menu__switch {
-  padding: 0px 28px 0px 0px;
+  margin: 0px 28px 0px 0px;
+  cursor: pointer;
+  font-size: 20px;
+  border: 1px solid #fff;
+  border-radius: 50%;
 }
 
 .menu__body {
@@ -364,6 +368,12 @@ h6 {
   padding: 0px 32px 0px 32px;
 }
 
+.footer__up {
+  font-size: 24px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
 .menu__icon {
   z-index: 5;
   display: block;
@@ -444,6 +454,44 @@ h6 {
   left: 0;
 }
 
+@font-face {
+  font-family: "icons";
+  src: url("../fonts/icons.woff") format("woff"), url("../fonts/icons.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^=_icon-]:before,
+[class*=" _icon-"]:before {
+  font-family: "icons" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^=_icon-]:before,
+[class*=" _icon-"]:before {
+  display: block;
+}
+
+._icon-logo-black:before {
+  content: "\e900";
+}
+
+._icon-theme:before {
+  content: "\e901";
+}
+
+._icon-Up:before {
+  content: "\e902";
+}
+
 body._lock {
   overflow: hidden;
 }
@@ -457,6 +505,30 @@ body {
 
 a {
   color: #fff;
+}
+
+._white {
+  background: #fff !important;
+  color: #000 !important;
+}
+
+._white a {
+  color: #000;
+}
+
+._white .menu__icon span,
+._white .menu__icon::before,
+._white .menu__icon::after {
+  background-color: #000 !important;
+}
+
+._white .menu__body {
+  background: rgba(255, 255, 255, 0.9) !important;
+}
+
+._white .menu__switch,
+._white .footer__up {
+  border: 1px solid #000;
 }
 
 @media (min-width: 767.98px) {
