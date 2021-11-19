@@ -1,0 +1,40 @@
+.portfolio {
+    &__hero {
+        position: relative;
+        height: 100vh;
+    }
+}
+.hero {
+    &__image {
+        position: absolute;
+        min-width: 100%;
+        z-index: 0;
+        margin: -56px 0px 0px 0px;
+    }
+
+    &__container {
+        max-width: 1280px;
+        height: 100%;
+        margin: -56px auto 0px auto;
+        display: flex;
+        align-items: center;
+    }
+
+    &__title {
+        position: absolute;
+        z-index: 1;
+        height: 150px;
+        transform: rotate(270deg);
+    }
+
+    &__text {
+        flex: 0 1 928px;
+        margin: 0 auto;
+        text-align: center;
+        font-weight: 500;
+        font-size: 64px;
+        line-height: 78px;
+        color: #000 !important;
+        z-index: 1;
+    }
+}

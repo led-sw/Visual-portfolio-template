@@ -1,9 +1,16 @@
 const iconMenu = document.querySelector('.menu__icon');
 if (iconMenu) {
     const menuBody = document.querySelector('.menu__body');
-    iconMenu.addEventListener("click", function(e) {
+    iconMenu.addEventListener("click", function (e) {
         document.body.classList.toggle('_lock');
         iconMenu.classList.toggle('_active');
         menuBody.classList.toggle('_active');
     });
 }
+
+const switchTheme = document.querySelector('.menu__switch');
+if (switchTheme) {
+    switchTheme.addEventListener('click', function (a) {
+        document.body.classList.toggle('_white');
+    });
+};

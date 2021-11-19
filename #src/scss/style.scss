@@ -140,6 +140,10 @@ h6 {
 @import "_menu";
 //ui
 @import "_ui";
+//icons
+@import "_icons";
+//portfolio
+@import "_portfolio";
 //
 
 //menu background scroll block
@@ -157,4 +161,24 @@ body {
 
 a {
 	color: #fff;
+}
+
+._white {
+	background: #fff !important;
+	color: #000 !important;
+	a {
+		color: #000;
+	}
+	.menu__icon span,
+	.menu__icon::before,
+	.menu__icon::after {
+		background-color: #000 !important;
+	}
+	.menu__body {
+		background: rgba(255, 255, 255, 0.9) !important;
+	}
+	.menu__switch,
+	.footer__up {
+        border: 1px solid #000;
+	}
 }

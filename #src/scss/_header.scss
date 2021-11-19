@@ -1,5 +1,5 @@
 .header {
-
+    z-index: 10;
     &__container {
         max-width: 1280px;
         margin: 24px auto 0px auto;
@@ -13,7 +13,7 @@
     }
 
     &__logo {
-        font-size: 18px;
+        font-size: 32px;
     }
 
     &__menu {
@@ -23,7 +23,11 @@
 .menu {
 
     &__switch {
-        padding: 0px 28px 0px 0px;
+        margin: 0px 28px 0px 0px;
+        cursor: pointer;
+        font-size: 20px;
+        border: 1px solid #fff;
+        border-radius: 50%;
     }
 
     &__body {
