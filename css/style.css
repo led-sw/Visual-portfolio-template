@@ -566,8 +566,6 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -768,6 +766,8 @@ a {
 @media (min-width: 1441px) {
   .portfolio__banner {
     width: 100%;
+    border-radius: 25px;
+    overflow: hidden;
     margin: 0px 0px 0px 0px;
   }
 }
